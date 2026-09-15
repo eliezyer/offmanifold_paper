@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760" role="img" aria-label="Conceptual state space with on-manifold and off-manifold activity">
+  <rect width="760" height="760" fill="#050505"/>
+  <g fill="none" stroke="#f2f2ef" stroke-opacity=".18" stroke-width="1">
+    <path d="M118 574 L630 574"/>
+    <path d="M190 644 L555 192"/>
+    <path d="M102 470 L620 314"/>
+  </g>
+  <ellipse cx="380" cy="390" rx="252" ry="86" transform="rotate(-17 380 390)" fill="#101012" stroke="#d13ab7" stroke-width="4"/>
+  <path d="M170 432 C250 354, 331 448, 410 374 C493 296, 548 398, 610 329" fill="none" stroke="#d13ab7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M315 530 C365 470, 412 437, 465 390" fill="none" stroke="#23aee7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M464 390 L488 474" fill="none" stroke="#23aee7" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#f2f2ef">
+    <circle cx="185" cy="429" r="5" opacity=".65"/>
+    <circle cx="276" cy="389" r="5" opacity=".45"/>
+    <circle cx="410" cy="374" r="5" opacity=".62"/>
+    <circle cx="548" cy="364" r="5" opacity=".5"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="3">
+    <text x="108" y="132" fill="#9a9a96">INTRINSIC V1 GEOMETRY</text>
+    <text x="170" y="306" fill="#d13ab7">ON-MANIFOLD</text>
+    <text x="482" y="506" fill="#23aee7">OFF-MANIFOLD</text>
+    <text x="454" y="282" fill="#8f9499">UNSTRUCTURED</text>
+  </g>
+</svg>

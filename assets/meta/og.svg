@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sleep reveals how V1 balances movement and vision">
+  <rect width="1200" height="630" fill="#050505"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M665 355 C735 175, 955 190, 1020 355" stroke="#d13ab7" stroke-width="10"/>
+    <path d="M695 400 C785 505, 925 505, 1000 400" stroke="#23aee7" stroke-width="10"/>
+    <path d="M690 378 L1010 378" stroke="#8f9499" stroke-width="2" opacity=".5"/>
+  </g>
+  <text x="90" y="130" fill="#9a9a96" font-family="Inter, Arial, sans-serif" font-size="28" letter-spacing="6">NATURE COMMUNICATIONS, 2026</text>
+  <text x="88" y="250" fill="#f2f2ef" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="700">Movement enters</text>
+  <text x="88" y="346" fill="#f2f2ef" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="700">visual cortex.</text>
+  <text x="92" y="455" fill="#f2f2ef" font-family="Inter, Arial, sans-serif" font-size="40">Vision still has to survive.</text>
+</svg>

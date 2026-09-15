@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Movement and stimulus vectors combine on the on-manifold">
+  <rect width="900" height="420" fill="#050505"/>
+  <g transform="translate(120 70)">
+    <path d="M70 220 L530 270 L720 116 L262 66 Z" fill="#101012" stroke="#d13ab7" stroke-width="5"/>
+    <path d="M120 224 L660 140" stroke="#f2f2ef" stroke-opacity=".28" stroke-width="2"/>
+    <path d="M245 75 L202 286" stroke="#f2f2ef" stroke-opacity=".28" stroke-width="2"/>
+    <path d="M290 180 L510 148" stroke="#78b84a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M290 180 L300 84" stroke="#23aee7" stroke-width="8" stroke-linecap="round"/>
+    <path d="M290 180 L520 58" stroke="#f2f2ef" stroke-width="3" stroke-dasharray="9 10" opacity=".55"/>
+    <text x="64" y="342" fill="#d13ab7" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">on-manifold</text>
+    <text x="526" y="148" fill="#78b84a" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">movement</text>
+    <text x="308" y="78" fill="#23aee7" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">stimulus</text>
+    <text x="534" y="54" fill="#f2f2ef" font-family="Inter, Arial, sans-serif" font-size="18" opacity=".7">additive combination</text>
+  </g>
+</svg>

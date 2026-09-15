@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sleep reveals how V1 balances movement and vision</title>
+    <meta
+      name="description"
+      content="A cinematic companion site for the Nature Communications paper on intrinsic V1 dynamics, on-manifold movement, off-manifold stimulus coding, and sparse chorister responses."
+    >
+    <meta name="theme-color" content="#050505">
+    <meta property="og:title" content="Sleep reveals how V1 balances movement and vision">
+    <meta
+      property="og:description"
+      content="Movement lives largely on the manifold. Vision also reaches suppressed off-manifold dimensions."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/meta/og.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sleep reveals how V1 balances movement and vision">
+    <meta
+      name="twitter:description"
+      content="A scroll-driven scientific narrative for a Nature Communications paper on movement, vision, and intrinsic V1 geometry."
+    >
+    <meta name="twitter:image" content="assets/meta/og.svg">
+    <link rel="icon" href="assets/meta/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <canvas class="ambient-field" data-ambient-canvas aria-hidden="true"></canvas>
+    <div class="ambient-vignette" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-nav" data-nav>
+      <a class="brand" href="#top" aria-label="Back to top">Sleep V1</a>
+      <nav aria-label="Primary navigation">
+        <a href="#geometry">Geometry</a>
+        <a href="#movement">Movement</a>
+        <a href="#vision">Vision</a>
+        <a href="#synthesis">Synthesis</a>
+        <a href="#paper">Paper</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="kicker">Nature Communications, 2026</p>
+            <h1 id="hero-title">Movement enters visual cortex. Vision still has to survive.</h1>
+            <p class="lede">
+              V1 carries rich signals about ongoing movements while also representing the visual world. This creates a geometric problem: how can movement and sensory activity share the same population without one interfering the other?
+            </p>
+            <p>
+              This study uses sleep to reveal the intrinsic structure of V1 population activity, then asks how movement and stimulus representations occupy that structure during wakefulness.
+            </p>
+            <div class="hero-links" aria-label="Primary links">
+              <a href="https://doi.org/10.1038/s41467-026-75347-4">Paper</a>
+              <a href="https://doi.org/10.1038/s41467-026-75347-4">DOI</a>
+              <a href="https://github.com/SjulsonLab/deOliveira_Kim_SleepV1_2026">GitHub</a>
+            </div>
+          </div>
+
+          <figure class="hero-visual reveal" aria-label="Animated conceptual visualization of intrinsic manifold geometry and suppressed off-manifold directions">
+            <div class="manifold-stage">
+              <canvas class="manifold-canvas" data-manifold-canvas aria-hidden="true"></canvas>
+              <div class="manifold-label manifold-label--surface">Intrinsic manifold</div>
+              <div class="manifold-label manifold-label--off">Off-manifold activity</div>
+            </div>
+            <figcaption>Deep-layer V1 recordings during NREM sleep, quiet wakefulness, movement, and natural-scene viewing.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="narrative-section" id="problem">
+        <div class="section-inner narrow reveal">
+          <p class="kicker">One population, multiple variables</p>
+          <h2>V1 jointly represents movement and visual stimuli.</h2>
+          <p>
+            Movement-related activity in V1 is not a small nuisance signal. Running and facial movements can be decoded from population activity, yet the same neurons must still encode visual stimuli. The question is not whether these signals coexist, but how their coexistence is organized.
+          </p>
+        </div>
+      </section>
+
+      <section class="split-section" id="sleep">
+        <div class="section-copy reveal">
+          <p class="kicker">An intrinsic reference frame</p>
+          <h2>Sleep reveals the circuit's preferred geometry.</h2>
+          <p>
+            NREM sleep provides a window into population activity with reduced visual input and little overt movement. In that state, V1 expresses structured intrinsic dynamics that are also substantially preserved during wakefulness. Those dynamics give a reference frame for asking where awake movement and stimulus activity live.
+          </p>
+        </div>
+        <figure class="wide-figure reveal">
+          <img src="assets/figures/fig1-geometry.png" alt="Figure 1 crop showing NREM recordings, subspace determination, and decomposition of awake activity into on-manifold, unstructured, and off-manifold components.">
+          <figcaption>NREM and awake population structure show strong subspace alignment.</figcaption>
+        </figure>
+      </section>
+
+      <section class="sticky-story" id="geometry" aria-labelledby="geometry-title">
+        <div class="sticky-visual reveal">
+          <img src="assets/figures/spectrum_subspaces_names.png" alt="Diagram defining on-manifold, unstructured, and off-manifold dimensions relative to an NREM null distribution.">
+        </div>
+        <div class="sticky-copy">
+          <article class="step reveal">
+            <p class="kicker">Three kinds of subspaces</p>
+            <h2 id="geometry-title">Not every direction is equally available.</h2>
+            <p>
+              Cross-validated PCA of NREM activity separates state space into three operational subspaces. On-manifold dimensions express more reliable variance than expected by chance. Unstructured dimensions are near chance. Off-manifold dimensions express less variance than chance.
+            </p>
+          </article>
+          <article class="step reveal">
+            <h3>Off-manifold is specifically defined.</h3>
+            <p>
+              These are not arbitrary dimensions outside the intrinsic manifold. They are directions suppressed by intrinsic dynamics during NREM, which makes them a structured part of the circuit's geometry.
+            </p>
+          </article>
+          <article class="legend-step reveal" aria-label="Color legend">
+            <span><i class="swatch on"></i>On-manifold</span>
+            <span><i class="swatch unstructured"></i>Unstructured</span>
+            <span><i class="swatch off"></i>Off-manifold</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section result" id="movement">
+        <div class="section-copy reveal">
+          <p class="kicker">Movement follows the dominant modes</p>
+          <h2>Movement lives largely on the manifold.</h2>
+          <p>
+            Facial motion and running speed are preferentially represented in on-manifold dimensions. Because the on-manifold is low-dimensional, higher-dimensional unstructured spaces can contain more total decodable movement signal. But per dimension, movement information is concentrated on-manifold.
+          </p>
+        </div>
+        <figure class="paper-figure reveal">
+          <img src="assets/figures/fig2-movement.png" alt="Figure 2 crop showing movement prediction from on-manifold, unstructured, and off-manifold subspaces for face motion and running speed.">
+          <figcaption>Movement prediction per dimension is strongest in the NREM-defined on-manifold subspace.</figcaption>
+        </figure>
+      </section>
+
+      <section class="split-section reverse result" id="constraint">
+        <div class="section-copy reveal">
+          <p class="kicker">Intrinsic dynamics shape the response</p>
+          <h2>The circuit constrains what inputs become.</h2>
+          <p>
+            RNN simulations and optogenetic playback support the idea that intrinsic local dynamics can concentrate diverse inputs into overlapping on-manifold subspaces. But those dynamics do not determine the detailed representation. The fine structure still depends on the specific input pattern.
+          </p>
+        </div>
+        <figure class="paper-figure reveal">
+          <img src="assets/figures/fig3-constraint.png" alt="Figure 3 crop showing RNN and optogenetic playback evidence that diverse inputs can be concentrated on the intrinsic manifold.">
+          <figcaption>Different inputs can occupy shared on-manifold geometry while remaining distinguishable.</figcaption>
+        </figure>
+      </section>
+
+      <section class="split-section result" id="vision">
+        <div class="section-copy reveal">
+          <p class="kicker">Visual information splits</p>
+          <h2>Vision uses both shared and suppressed directions.</h2>
+          <p>
+            Natural-scene identity is encoded in both on-manifold and off-manifold dimensions. Per dimension, stimulus information is strongest on-manifold. But because the off-manifold subspace has more dimensions, it carries a large share of total stimulus information.
+          </p>
+        </div>
+        <figure class="paper-figure reveal">
+          <img src="assets/figures/fig4-vision.png" alt="Figure 4 crop showing natural scene decoding in on-manifold, unstructured, and off-manifold dimensions.">
+          <figcaption>Stimulus decoding is enriched in both high-variance on-manifold and low-variance off-manifold dimensions.</figcaption>
+        </figure>
+      </section>
+
+      <section class="split-section reverse result" id="integration">
+        <div class="section-copy reveal">
+          <p class="kicker">Where signals meet</p>
+          <h2>On-manifold is the shared workspace.</h2>
+          <p>
+            Movement and stimulus representations interact in the on-manifold subspace. The key evidence is asymmetric: stimulus identity was not decoded from the movement subspace, but facial motion could be predicted from the stimulus-encoding subspace. This interaction was additive and localized to on-manifold dimensions.
+          </p>
+        </div>
+        <div class="figure-pair reveal">
+          <img class="diagram" src="assets/diagrams/additive-workspace.svg" alt="Diagram showing movement and stimulus vectors combining additively on the on-manifold plane.">
+          <figure class="paper-figure compact">
+            <img src="assets/figures/fig6-integration.png" alt="Figure 6 crop showing face motion prediction from visual stimulation subspaces and chorister removal analysis.">
+            <figcaption>Movement predictability from the stimulus subspace marks additive interaction.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="sticky-story quiet-space" id="synthesis" aria-labelledby="segregation-title">
+        <div class="sticky-visual reveal">
+          <img src="assets/figures/fig7-segregation.png" alt="Figure 7 crop explaining how off-manifold coding can keep stimulus and movement representations separable.">
+        </div>
+        <div class="sticky-copy">
+          <article class="step reveal">
+            <p class="kicker">A quieter coding space</p>
+            <h2 id="segregation-title">Off-manifold is spared from movement.</h2>
+            <p>
+              Off-manifold dimensions are suppressed during intrinsic NREM dynamics and contain relatively little movement-related activity. Visual information encoded there therefore experiences less movement interference.
+            </p>
+          </article>
+          <article class="step reveal">
+            <p class="kicker">Cellular structure</p>
+            <h2>Choristers can become sparse.</h2>
+            <p>
+              On- and off-manifold activity both involve chorister neurons, whose spontaneous activity is strongly coupled to the population. The difference is pattern structure: on-manifold activity is population-dense, while off-manifold stimulus coding reflects choristers participating in sparse stimulus-evoked patterns.
+            </p>
+          </article>
+          <article class="step reveal">
+            <p class="kicker">A second function for sparseness</p>
+            <h2>Sparse responses open the off-manifold.</h2>
+            <p>
+              Sparse coding is often discussed in terms of efficiency. Here it also has a geometric role. When visual stimuli evoke sparse patterns in chorister neurons, activity can access off-manifold dimensions that movement rarely enters, improving separability between movement and stimulus representations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="narrative-section final-argument">
+        <div class="section-inner reveal">
+          <p class="kicker">Integration and segregation</p>
+          <h2>One geometry supports two computations.</h2>
+          <p>
+            Low-dimensional intrinsic dynamics concentrate movement and part of the visual representation into a shared on-manifold space, where they can interact. The same dynamics define suppressed off-manifold directions that sparse stimulus responses can use with less movement interference.
+          </p>
+          <p>
+            Together, intrinsic dynamics and sparse coding help V1 integrate movement with vision while partially segregating visual information from movement.
+          </p>
+          <img class="synthesis-diagram" src="assets/diagrams/synthesis.svg" alt="Synthesis diagram showing on-manifold integration and off-manifold segregation.">
+        </div>
+      </section>
+
+      <section class="narrative-section limitations">
+        <div class="section-inner narrow reveal">
+          <p class="kicker">What remains open</p>
+          <h2>The geometry is clear. The mechanism is not finished.</h2>
+          <p>
+            The study identifies a population-level organization, not a complete circuit mechanism. The models show proof of principle, and the optogenetic experiments support intrinsic constraints, but the biological sources of off-manifold stimulus responses remain open. Head fixation also limits the range of natural movements.
+          </p>
+        </div>
+      </section>
+
+      <section class="paper-section" id="paper">
+        <div class="paper-inner reveal">
+          <p class="kicker">Paper and resources</p>
+          <h2>Sleep reveals how V1 balances movement and vision.</h2>
+          <p class="paper-title">
+            Sleep reveals dynamics integrating and segregating movement and stimulus representations in V1.
+          </p>
+          <p>
+            Eliezyer Fermino de Oliveira, Soyoun Kim, Tian Season Qiu, Adrien Peyrache, Renata Batista-Brito, and Lucas Sjulson. Nature Communications, 2026.
+          </p>
+          <div class="resource-links">
+            <a href="https://doi.org/10.1038/s41467-026-75347-4">Read the paper</a>
+            <a href="https://doi.org/10.1038/s41467-026-75347-4">DOI: 10.1038/s41467-026-75347-4</a>
+            <a href="https://github.com/SjulsonLab/deOliveira_Kim_SleepV1_2026">Analysis code</a>
+          </div>
+          <div class="citation">
+            <p>Citation</p>
+            <pre><code>de Oliveira EF, Kim S, Qiu TS, Peyrache A, Batista-Brito R, Sjulson L. Sleep reveals dynamics integrating and segregating movement and stimulus representations in V1. Nature Communications. 2026;17:8911. doi:10.1038/s41467-026-75347-4</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Companion website for the Sjulson Lab Nature Communications paper.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>

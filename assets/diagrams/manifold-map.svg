@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 760" role="img" aria-label="Diagram of on-manifold, unstructured, and off-manifold dimensions">
+  <rect width="980" height="760" fill="#050505"/>
+  <g transform="translate(86 92)">
+    <text x="0" y="0" fill="#9a9a96" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">NREM CVPCA DIMENSIONS</text>
+    <path d="M0 476 H790" stroke="#f2f2ef" stroke-opacity=".2"/>
+    <path d="M0 68 V476" stroke="#f2f2ef" stroke-opacity=".2"/>
+    <path d="M0 214 C135 158, 280 187, 414 253 C550 318, 666 315, 790 278" fill="none" stroke="#8f9499" stroke-width="34" stroke-opacity=".28" stroke-linecap="round"/>
+    <path d="M0 190 C52 92, 125 105, 188 158 C262 219, 325 240, 395 252 C536 276, 665 270, 790 270" fill="none" stroke="#f2f2ef" stroke-width="4" stroke-opacity=".78"/>
+    <path d="M0 92 C60 145, 119 170, 177 190" fill="none" stroke="#d13ab7" stroke-width="6" stroke-linecap="round"/>
+    <path d="M618 350 C680 342, 738 315, 790 258" fill="none" stroke="#23aee7" stroke-width="6" stroke-linecap="round"/>
+    <g stroke-width="2">
+      <path d="M184 68 V476" stroke="#d13ab7" stroke-dasharray="8 10"/>
+      <path d="M616 68 V476" stroke="#23aee7" stroke-dasharray="8 10"/>
+    </g>
+    <g font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">
+      <text x="22" y="548" fill="#d13ab7">on-manifold</text>
+      <text x="286" y="548" fill="#8f9499">unstructured</text>
+      <text x="614" y="548" fill="#23aee7">off-manifold</text>
+    </g>
+    <g font-family="Inter, Arial, sans-serif" font-size="18" fill="#9a9a96">
+      <text x="18" y="510">above chance</text>
+      <text x="305" y="510">near chance</text>
+      <text x="630" y="510">below chance</text>
+    </g>
+  </g>
+</svg>
