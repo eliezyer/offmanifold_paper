@@ -23,7 +23,7 @@
       content="A scroll-driven scientific narrative for a Nature Communications paper on movement, vision, and intrinsic V1 geometry."
     >
     <meta name="twitter:image" content="assets/meta/og.svg">
-    <link rel="icon" href="assets/meta/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/meta/favicon.svg?v=2" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
@@ -79,7 +79,7 @@
           <p class="kicker">One population, multiple variables</p>
           <h2>V1 jointly represents movement and visual stimuli.</h2>
           <p>
-            Movement-related activity in V1 is not a small nuisance signal. Running and facial movements can be decoded from population activity, yet the same neurons must still encode visual stimuli. The question is not whether these signals coexist, but how their coexistence is organized.
+            Movement-related activity in V1 is not a small nuisance signal. Running and facial movements can be decoded from population activity, yet the same neurons must still encode visual stimuli. The question is how their coexistence is organized.
           </p>
         </div>
       </section>
@@ -143,7 +143,7 @@
           <p class="kicker">Intrinsic dynamics shape the response</p>
           <h2>The circuit constrains what inputs become.</h2>
           <p>
-            RNN simulations and optogenetic playback support the idea that intrinsic local dynamics can concentrate diverse inputs into overlapping on-manifold subspaces. But those dynamics do not determine the detailed representation. The fine structure still depends on the specific input pattern.
+            RNN simulations and optogenetic playback support the idea that intrinsic local dynamics can concentrate diverse inputs into overlapping subspaces. But those dynamics do not determine the detailed representation. The fine structure still depends on the specific input pattern.
           </p>
         </div>
         <figure class="paper-figure reveal">
@@ -155,7 +155,7 @@
       <section class="split-section result" id="vision">
         <div class="section-copy reveal">
           <p class="kicker">Visual information splits</p>
-          <h2>Vision uses both shared and suppressed directions.</h2>
+          <h2>Vision uses both intrinsic and suppressed directions.</h2>
           <p>
             Natural-scene identity is encoded in both on-manifold and off-manifold dimensions. Per dimension, stimulus information is strongest on-manifold. But because the off-manifold subspace has more dimensions, it carries a large share of total stimulus information.
           </p>
@@ -169,13 +169,12 @@
       <section class="split-section reverse result" id="integration">
         <div class="section-copy reveal">
           <p class="kicker">Where signals meet</p>
-          <h2>On-manifold is the shared workspace.</h2>
+          <h2>On-manifold is the shared subspace.</h2>
           <p>
             Movement and stimulus representations interact in the on-manifold subspace. The key evidence is asymmetric: stimulus identity was not decoded from the movement subspace, but facial motion could be predicted from the stimulus-encoding subspace. This interaction was additive and localized to on-manifold dimensions.
           </p>
         </div>
         <div class="figure-pair reveal">
-          <img class="diagram" src="assets/diagrams/additive-workspace.svg" alt="Diagram showing movement and stimulus vectors combining additively on the on-manifold plane.">
           <figure class="paper-figure compact">
             <img src="assets/figures/fig6-integration.png" alt="Figure 6 crop showing face motion prediction from visual stimulation subspaces and chorister removal analysis.">
             <figcaption>Movement predictability from the stimulus subspace marks additive interaction.</figcaption>
@@ -204,7 +203,7 @@
           </article>
           <article class="step reveal">
             <p class="kicker">A second function for sparseness</p>
-            <h2>Sparse responses open the off-manifold.</h2>
+            <h2>Sparse responses access the off-manifold.</h2>
             <p>
               Sparse coding is often discussed in terms of efficiency. Here it also has a geometric role. When visual stimuli evoke sparse patterns in chorister neurons, activity can access off-manifold dimensions that movement rarely enters, improving separability between movement and stimulus representations.
             </p>
@@ -222,7 +221,7 @@
           <p>
             Together, intrinsic dynamics and sparse coding help V1 integrate movement with vision while partially segregating visual information from movement.
           </p>
-          <img class="synthesis-diagram" src="assets/diagrams/synthesis.svg" alt="Synthesis diagram showing on-manifold integration and off-manifold segregation.">
+          <img class="synthesis-diagram" src="assets/diagrams/synthesis.svg?v=4" alt="Meshed state-space plane showing magenta on-manifold dynamics and a vertical cyan off-manifold spike raster rising from the plane.">
         </div>
       </section>
 

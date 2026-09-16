@@ -1,16 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 470" role="img" aria-label="Synthesis of on-manifold integration and off-manifold segregation">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 470" role="img" aria-labelledby="title description">
+  <title id="title">On-manifold dynamics and off-manifold stimulus activity</title>
+  <desc id="description">A meshed two-dimensional plane carries magenta population trajectories while sparse cyan activity projects out of the plane.</desc>
+
+  <defs>
+    <clipPath id="plane-clip">
+      <path d="M132 322 L390 112 L982 180 L716 394 Z"/>
+    </clipPath>
+    <marker id="arrow-magenta" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#d13ab7"/>
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#23aee7"/>
+    </marker>
+    <marker id="arrow-neutral" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#f2f2ef"/>
+    </marker>
+    <filter id="cyan-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
   <rect width="1120" height="470" fill="#050505"/>
-  <g transform="translate(70 64)">
-    <path d="M80 224 C236 76, 410 104, 550 210 C684 310, 832 296, 970 160" fill="none" stroke="#d13ab7" stroke-width="10" stroke-linecap="round"/>
-    <path d="M640 254 C730 205, 809 184, 906 174" fill="none" stroke="#23aee7" stroke-width="10" stroke-linecap="round"/>
-    <path d="M638 254 L752 308" fill="none" stroke="#23aee7" stroke-width="10" stroke-linecap="round"/>
-    <path d="M70 254 H1000" stroke="#f2f2ef" stroke-opacity=".16"/>
-    <g fill="#f2f2ef" font-family="Inter, Arial, sans-serif">
-      <text x="70" y="36" font-size="18" font-weight="700" letter-spacing="4" fill="#9a9a96">SYNTHESIS</text>
-      <text x="78" y="326" font-size="30" font-weight="700" fill="#d13ab7">integration</text>
-      <text x="78" y="364" font-size="18" fill="#9a9a96">movement and part of vision share the manifold</text>
-      <text x="700" y="326" font-size="30" font-weight="700" fill="#23aee7">segregation</text>
-      <text x="700" y="364" font-size="18" fill="#9a9a96">sparse stimulus coding reaches suppressed directions</text>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M132 322 L390 112 L982 180 L716 394 Z" fill="#0b0c0e" stroke="#f2f2ef" stroke-opacity="0.18" stroke-width="1.5"/>
+
+    <g clip-path="url(#plane-clip)" stroke="#8f9499" stroke-opacity="0.22" stroke-width="1">
+      <path d="M338 154 L929 223"/>
+      <path d="M287 196 L876 266"/>
+      <path d="M235 238 L822 308"/>
+      <path d="M184 280 L769 351"/>
+      <path d="M192 329 L446 119"/>
+      <path d="M252 336 L505 126"/>
+      <path d="M311 343 L565 132"/>
+      <path d="M371 351 L624 139"/>
+      <path d="M430 358 L683 146"/>
+      <path d="M489 365 L743 153"/>
+      <path d="M549 372 L802 160"/>
+      <path d="M608 379 L861 167"/>
+      <path d="M667 386 L921 174"/>
     </g>
+
+    <path d="M132 322 L390 112 L982 180 L716 394 Z" stroke="#f2f2ef" stroke-opacity="0.22" stroke-width="1.5"/>
+
+    <g stroke="#d13ab7">
+      <path d="M250 292 C318 205 451 164 596 187 C737 210 816 267 751 312 C684 358 517 356 378 329 C292 312 233 304 250 292 Z" stroke-opacity="0.5" stroke-width="2"/>
+      <path d="M286 298 C361 239 470 207 601 218 C704 226 759 253 735 280 C707 311 603 326 495 318 C404 312 331 297 286 298 Z" stroke-opacity="0.72" stroke-width="2.5"/>
+      <path d="M320 307 C411 270 507 246 633 249 C699 251 726 262 746 276" stroke-width="4" marker-end="url(#arrow-magenta)"/>
+      <path d="M342 278 C413 226 512 199 627 211 C680 217 712 230 732 247" stroke-opacity="0.7" stroke-width="2" marker-end="url(#arrow-magenta)"/>
+    </g>
+
+    <path d="M562 302 L562 64" stroke="#f2f2ef" stroke-opacity="0.52" stroke-width="1.5" marker-end="url(#arrow-neutral)"/>
+    <g stroke="#23aee7" filter="url(#cyan-glow)">
+      <path d="M562 302 L562 184" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+      <path d="M524 164 L548 157" stroke-opacity="0.9" stroke-width="2.5"/>
+      <path d="M530 145 L548 140" stroke-opacity="0.72" stroke-width="2"/>
+      <path d="M520 126 L548 118" stroke-opacity="0.94" stroke-width="2.5"/>
+      <path d="M531 106 L548 101" stroke-opacity="0.62" stroke-width="2"/>
+      <path d="M526 88 L548 82" stroke-opacity="0.82" stroke-width="2.5"/>
+    </g>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="48" y="52" fill="#9a9a96" font-size="16" font-weight="700" letter-spacing="4">SYNTHESIS</text>
+    <text x="152" y="430" fill="#d13ab7" font-size="15" font-weight="700" letter-spacing="2.5">ON-MANIFOLD DYNAMICS</text>
+    <text x="152" y="453" fill="#9a9a96" font-size="14">shared movement and visual activity</text>
+    <text x="746" y="84" fill="#23aee7" font-size="15" font-weight="700" letter-spacing="2.5">OFF-MANIFOLD ACTIVITY</text>
+    <text x="746" y="107" fill="#9a9a96" font-size="14">sparse stimulus-evoked directions</text>
   </g>
 </svg>
