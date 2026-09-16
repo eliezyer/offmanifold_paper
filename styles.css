@@ -271,7 +271,7 @@ p {
 h1 {
   max-width: 11ch;
   margin-bottom: var(--space-md);
-  font-size: clamp(3rem, 6vw, 6.9rem);
+  font-size: clamp(2.85rem, 5.4vw, 6.3rem);
   font-weight: 720;
   letter-spacing: 0;
   line-height: 0.9;
